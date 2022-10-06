@@ -2,17 +2,17 @@
 
 #  Chapter III - Desafio 01: Database Queries :rocket: :purple_heart:
 
-## :dart: Objetivo
+## :golf: Objective
 
-Realizar consultas no banco de dados com o TypeORM de três formas:
+Perform database queries using TypeORM in three ways: 
 
 - ORM
 - Query Builder
 - Raw Query
 
-## :white_check_mark: Requisitos
+## :white_check_mark: Requirements 
 
-### Repositórios da aplicação
+### Application Repositories 
 
 #### UsersRepository
 - [x] findUserWithGamesById
@@ -24,7 +24,7 @@ Realizar consultas no banco de dados com o TypeORM de três formas:
 - [x] countAllGames
 - [x] findUsersByGameId
 
-### Específicação dos testes
+### Test Specifications
 
 #### UsersRepository
 - [x] Should be able to find user with games list by user's ID
@@ -37,21 +37,30 @@ Realizar consultas no banco de dados com o TypeORM de três formas:
 - [x] Should be able to list users who have given game id
 
 
-## :computer: Instalação ##
+## :computer: Want to challange yourself? ##
 
 ```bash
-# Clone este repositório
-$ git clone https://github.com/Thifany-Nicastro/IgniteNode-ChapterIII-Desafio01.git
+# Create the database:
+$ docker run --name ignite-challenge-database-queries -e POSTGRES_DB=queries_challenge -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
 
-# Entre na pasta
-$ cd IgniteNode-ChapterIII-Desafio01
+# Clone this repository 
+$ git clone https://github.com/luanrem/NodeJs-Learn-Desafio05.git
 
-# Instale as dependências
-$ yarn ou yarn install
+# Enter the folder
+$ cd NodeJs-Learn-Desafio05
 
-# Execute a aplicação em modo de desenvolvimento
-$ yarn dev
+# Go to first commit
+$ git checkout `git rev-list --max-parents=0 HEAD | tail -n 1`
 
-# O servidor inciará na porta:3333
-acesse <http://localhost:3333>
+# Install dependencies
+$ yarn or yarn install
+
+# Test the application
+$ yarn test
+
+# Go to the files: 
+# src/modules/users/repositories/implementations/UsersRepository.ts 
+# src/modules/games/repositories/implementations/GamesRepository.ts. 
+
+# Start the challange 
 ```
