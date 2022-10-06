@@ -1,3 +1,5 @@
+![ignite image](.github/cover-node.js.png)
+
 #  Chapter III - Desafio 01: Database Queries :rocket: :purple_heart:
 
 ## :dart: Objetivo
